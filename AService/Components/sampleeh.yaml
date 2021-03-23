@@ -1,0 +1,15 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:  
+  name: dapr-eh
+spec:
+  type: pubsub.azure.eventhubs
+  metadata:
+  - name: connectionString
+    value: <connectionString>
+  - name: storageAccountName
+    value: <storageAccountName>
+  - name: storageAccountKey
+    value: <storageAccountKey>
+  - name: storageContainerName
+    value: darpsample
