@@ -1,0 +1,11 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  namespace: jmfzapinsample
+  name: dapr-sb 
+spec:
+  type: pubsub.azure.servicebus
+  version: v1
+  metadata:
+  - name: connectionString # Required
+    value: "Endpoint=sb://jmfz-darpsample.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=eqodmGvFl02Hk7SPe99zO5CkDOJlhzgNQ0SCqxh9BQM="
